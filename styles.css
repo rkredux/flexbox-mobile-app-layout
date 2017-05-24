@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  overflow: hidden;
+  /*background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);*/
+  background: white; 
+}
+
+.app-wrap{
+  border: 10px solid rgba(0,0,0,.8); 
+  border-bottom-width: 60px; 
+  border-radius: 10px; 
+  max-width: 500px; 
+  height: 90vh;
+  width: 80vw; 
+  margin: 40px auto; 
+  }
+
+.app-header{
+  padding: 20px;
+  background: #e3be42; 
+  border-bottom:1px solid #E6E6E6;
+}
+
+.app-header h1{
+  color: rgba(0,0,0,.5);
+  font-size: 2.5rem;  
+  font-weight: bold; 
+  padding: 0 10px;
+  text-align: center; 
+
+}
+
+.app-header a{
+  text-decoration: none; 
+  color: white;
+  font-size: 1.5rem; 
+  background: rgba(0,0,0,.1);
+  padding: .5rem;
+}
+
+/*header:first-child{
+  background: rgba(0,0,0,.2); 
+}
+*/
+.content{
+  overflow-y: scroll;
+  padding: 1rem 2rem;
+  justify-content: center;
+  background: ;  
+  font-size: 1.5rem; 
+}
+
+.icon-bar{
+  border-top:1px solid #E6E6E6;
+  background: #e3be42;
+  padding: 20px;
+}
+
+.icon-bar a{
+  text-decoration: none; 
+  font-size: 1.2rem; 
+  padding: 5px;
+  color: rgba(0,0,0,.5); 
+  justify-content: center; 
+}
+
+.icon-bar i{
+  display: block; 
+  color: white;
+  text-align: center; 
+  text-shadow:2px 2px 0 rgba(0,0,0,0.1);
+  margin: 3px;
+}
+
+.icon-bar a:first-child {
+  border-left: 0;
+}
+
+.icon-bar a:hover {
+  border-bottom: 5px solid rgba(0,0,0,0.1);
+}
+
+
+
+
+/*flex CSS starts here*/
+
+.app-wrap{
+  display: flex;
+  flex-direction: column; 
+}
+
+.app-wrap > *{
+  flex: 1 1 auto;
+}
+
+.app-header {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+
+.icon-bar{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-around;
+  align-items: center; 
+}
+
+.icon-bar a{
+  flex: 1;
+  text-align: center; 
+}
+
+
+
+
+
+
+
